@@ -1,7 +1,0 @@
-<template>
-  <div class="authority">
-    <div>authority</div>
-    <router-view></router-view>
-  </div>
-</template>
-

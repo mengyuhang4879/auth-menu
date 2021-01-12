@@ -1,6 +1,0 @@
-<template>
-  <div class="systemSettings">
-    <div>systemSettings</div>
-    <router-view></router-view>
-  </div>
-</template>
