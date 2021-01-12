@@ -1,0 +1,11 @@
+<template>
+  <div class="authority">
+    <div>authority</div>
+  </div>
+</template>
+
+<script>
+export default {
+  name: "authority"
+};
+</script>

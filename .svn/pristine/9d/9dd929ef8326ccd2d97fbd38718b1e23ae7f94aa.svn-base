@@ -1,0 +1,11 @@
+<template>
+  <div class="leaveApplication">
+    <div>leaveApplication</div>
+  </div>
+</template>
+
+<script>
+export default {
+  name: "leaveApplication"
+};
+</script>

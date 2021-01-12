@@ -1,0 +1,5 @@
+<template>
+  <div class="office">
+    <div>Office</div>
+  </div>
+</template>

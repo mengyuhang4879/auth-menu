@@ -1,0 +1,6 @@
+<template>
+  <div class="office">
+    <div>Office</div>
+    <router-view></router-view>
+  </div>
+</template>

@@ -1,0 +1,31 @@
+import Vue from "vue";
+import App from "./App.vue";
+import router from "./router";
+import store from "./store";
+import ElementUI from 'element-ui';
+import { routes } from './router'
+import 'element-ui/lib/theme-chalk/index.css';
+Vue.use(ElementUI)
+Vue.config.productionTip = false;
+router.beforeEach(async (to, from, next) => {
+  console.log(store.state.isHaveAuth)
+  if (!store.state.isHaveAuth) {
+    let needRoutes = await store.dispatch('getAuthRoutes');
+    routes[0].children = needRoutes;
+    routes[1] =  {
+      path: "*",
+      name: "notFound",
+      component: () => import(/* webpackChunkName: "notFound" */ "./views/notFound.vue")
+    };
+    console.log(routes)
+    next({ ...to, replace: true });
+  } else {
+    next()
+  }
+})
+
+new Vue({
+  router,
+  store,
+  render: h => h(App)
+}).$mount("#app");

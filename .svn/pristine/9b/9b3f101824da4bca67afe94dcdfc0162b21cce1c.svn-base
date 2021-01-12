@@ -1,0 +1,11 @@
+<template>
+  <div class="leaveRecord">
+    <div>leaveRecord</div>
+  </div>
+</template>
+
+<script>
+export default {
+  name: "leaveRecord"
+};
+</script>

@@ -1,0 +1,6 @@
+<template>
+  <div class="leaveApplication">
+    <div>leaveApplication</div>
+    <router-view></router-view>
+  </div>
+</template>

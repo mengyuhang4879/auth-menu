@@ -1,0 +1,11 @@
+<template>
+  <div class="menuSettings">
+    <div>menuSettings</div>
+  </div>
+</template>
+
+<script>
+export default {
+  name: "menuSettings"
+};
+</script>

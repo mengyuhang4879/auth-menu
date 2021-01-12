@@ -1,0 +1,11 @@
+<template>
+  <div class="systemSettings">
+    <div>systemSettings</div>
+  </div>
+</template>
+
+<script>
+export default {
+  name: "systemSettings"
+};
+</script>
